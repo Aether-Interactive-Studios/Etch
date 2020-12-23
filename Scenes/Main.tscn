@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/ChartDump/3xRow.tscn" type="PackedScene" id=5]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.72549, 0.223529, 0.12549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.156863, 0.486275, 0.870588, 1 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.227451, 0.72549, 0.12549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.827451, 0.831373, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0, 0, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_top = -2.38236
+margin_right = 1024.0
+margin_bottom = 597.618
+color = Color( 0.168627, 0.109804, 0.109804, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RedBtn" type="Button" parent="."]
+margin_top = 107.0
+margin_right = 228.0
+margin_bottom = 173.0
+custom_styles/normal = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlueBtn" type="Button" parent="."]
+margin_top = 173.0
+margin_right = 228.0
+margin_bottom = 239.0
+custom_styles/normal = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GreenBtn" type="Button" parent="."]
+margin_top = 239.0
+margin_right = 228.0
+margin_bottom = 305.0
+custom_styles/normal = SubResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="YellowBtn" type="Button" parent="."]
+margin_top = 305.0
+margin_right = 228.0
+margin_bottom = 371.0
+custom_styles/normal = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="WhiteBtn" type="Button" parent="."]
+margin_top = 371.0
+margin_right = 228.0
+margin_bottom = 437.0
+custom_styles/normal = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BlackBtn" type="Button" parent="."]
+margin_top = 437.0
+margin_right = 228.0
+margin_bottom = 503.0
+custom_styles/normal = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="3xRow" parent="." instance=ExtResource( 5 )]
+[connection signal="pressed" from="RedBtn" to="." method="_on_RedBtn_pressed"]
+[connection signal="pressed" from="BlueBtn" to="." method="_on_BlueBtn_pressed"]
+[connection signal="pressed" from="GreenBtn" to="." method="_on_GreenBtn_pressed"]
+[connection signal="pressed" from="YellowBtn" to="." method="_on_YellowBtn_pressed"]
+[connection signal="pressed" from="WhiteBtn" to="." method="_on_WhiteBtn_pressed"]
+[connection signal="pressed" from="BlackBtn" to="." method="_on_BlackBtn_pressed"]

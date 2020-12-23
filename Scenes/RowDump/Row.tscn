@@ -1,0 +1,269 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (8).tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (9).tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (2).tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (5).tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (7).tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/PixelDump/2Pixel - Copy (6).tscn" type="PackedScene" id=6]
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=8]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=10]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=12]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.396078, 0.254902, 0.254902, 1 )
+
+[sub_resource type="GDScript" id=6]
+script/source = "extends Button
+
+
+# Declare member variables here. Examples:
+# var a = 2
+# var b = \"text\"
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+#func _process(delta):
+#	pass
+
+
+
+
+func _on_Pixel_mouse_entered():
+	
+	self[\"custom_styles/normal\"].bg_color = Globals.color
+	pass # Replace with function body.
+"
+
+[node name="Row" type="Control"]
+margin_left = 23.5717
+margin_top = -46.021
+margin_right = 63.5717
+margin_bottom = -6.02095
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel" type="Button" parent="." instance=ExtResource( 3 )]
+margin_left = 401.659
+margin_top = 197.99
+margin_right = 455.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 7 )
+script = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel4" type="Button" parent="." instance=ExtResource( 4 )]
+margin_left = 671.659
+margin_top = 197.99
+margin_right = 725.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 9 )
+script = SubResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel5" type="Button" parent="." instance=ExtResource( 6 )]
+margin_left = 617.659
+margin_top = 197.99
+margin_right = 671.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 11 )
+script = SubResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel6" type="Button" parent="." instance=ExtResource( 5 )]
+margin_left = 563.659
+margin_top = 197.99
+margin_right = 617.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 1 )
+script = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel7" type="Button" parent="." instance=ExtResource( 1 )]
+margin_left = 509.659
+margin_top = 197.99
+margin_right = 563.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 3 )
+script = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pixel8" type="Button" parent="." instance=ExtResource( 2 )]
+margin_left = 455.659
+margin_top = 197.99
+margin_right = 509.659
+margin_bottom = 245.99
+custom_styles/normal = SubResource( 5 )
+script = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="mouse_entered" from="Pixel" to="Pixel" method="_on_Pixel_mouse_entered"]
+[connection signal="mouse_entered" from="Pixel4" to="Pixel4" method="_on_Pixel_mouse_entered"]
+[connection signal="mouse_entered" from="Pixel5" to="Pixel5" method="_on_Pixel_mouse_entered"]
+[connection signal="mouse_entered" from="Pixel6" to="Pixel6" method="_on_Pixel_mouse_entered"]
+[connection signal="mouse_entered" from="Pixel7" to="Pixel7" method="_on_Pixel_mouse_entered"]
+[connection signal="mouse_entered" from="Pixel8" to="Pixel8" method="_on_Pixel_mouse_entered"]

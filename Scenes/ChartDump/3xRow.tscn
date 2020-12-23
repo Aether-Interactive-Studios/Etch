@@ -14,23 +14,27 @@ __meta__ = {
 }
 
 [node name="Row" parent="." instance=ExtResource( 3 )]
-margin_top = -2.38236
-margin_right = 40.0
-margin_bottom = 37.6177
+margin_left = 23.572
+margin_top = -0.502
+margin_right = 40.0004
+margin_bottom = 39.4981
 
 [node name="Row2" parent="." instance=ExtResource( 2 )]
-margin_top = 37.6177
-margin_right = 40.0
-margin_bottom = 77.6177
+margin_left = 23.572
+margin_top = 46.3581
+margin_right = 40.0003
+margin_bottom = 86.3581
 
 [node name="Row3" parent="." instance=ExtResource( 1 )]
-margin_top = 77.6177
-margin_bottom = 117.618
+margin_left = 23.572
+margin_top = 93.976
+margin_bottom = 133.976
 
 [node name="Row4" parent="." instance=ExtResource( 4 )]
-margin_top = 117.618
-margin_bottom = 157.618
+margin_left = 23.572
+margin_top = 141.98
+margin_bottom = 181.98
 
 [node name="Row5" parent="." instance=ExtResource( 5 )]
-margin_top = -47.5823
-margin_bottom = -7.58228
+margin_top = -48.7048
+margin_bottom = -8.70475

@@ -54,3 +54,18 @@ func _on_BlackBtn_pressed():
 	pass # Replace with function body.
 	
 
+
+
+func _on_ColorPickerButton_color_changed(color):
+	Globals.color = color
+	pass # Replace with function body.
+
+
+func _on_Button_pressed():
+	#$"3xRow".queue_free()
+	#var scene_res = preload("res://Scenes/ChartDump/3xRow.tscn")
+	#var scene = scene_res.instance()
+	
+	#self.add_child(scene)
+	get_tree().reload_current_scene()
+	pass # Replace with function body.

@@ -18,7 +18,6 @@ _global_script_class_icons={
 config/name="Etch A Sketch"
 run/main_scene="res://Scenes/Main.tscn"
 boot_splash/image="res://Data/Aether/aetherinteractivebrand.png"
-config/icon="res://icon.png"
 
 [autoload]
 
@@ -26,7 +25,8 @@ Globals="*res://Scripts/Globals.gd"
 
 [display]
 
-window/stretch/mode="viewport"
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [rendering]
 

@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=1]
+[ext_resource path="res://Data/Fonts/Roboto/Roboto-Thin.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://Scenes/ChartDump/3xRow.tscn" type="PackedScene" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
@@ -21,7 +22,10 @@ bg_color = Color( 1, 1, 1, 1 )
 [sub_resource type="StyleBoxFlat" id=6]
 bg_color = Color( 0, 0, 0, 1 )
 
-[node name="Control" type="Control"]
+[sub_resource type="DynamicFont" id=7]
+font_data = ExtResource( 2 )
+
+[node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -30,9 +34,9 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="."]
-margin_top = -2.38236
-margin_right = 1024.0
-margin_bottom = 597.618
+margin_top = -3.0
+margin_right = 2001.0
+margin_bottom = 1012.0
 color = Color( 0.168627, 0.109804, 0.109804, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -93,9 +97,39 @@ __meta__ = {
 }
 
 [node name="3xRow" parent="." instance=ExtResource( 5 )]
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+margin_top = 503.0
+margin_right = 228.0
+margin_bottom = 569.0
+color = Color( 0.803922, 0.478431, 0.94902, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 76.1938
+margin_top = 526.98
+margin_right = 188.194
+margin_bottom = 564.98
+custom_fonts/font = SubResource( 7 )
+text = "Custom"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+visible = false
+margin_left = 493.889
+margin_top = 427.113
+margin_right = 710.889
+margin_bottom = 541.113
+text = "Clear"
 [connection signal="pressed" from="RedBtn" to="." method="_on_RedBtn_pressed"]
 [connection signal="pressed" from="BlueBtn" to="." method="_on_BlueBtn_pressed"]
 [connection signal="pressed" from="GreenBtn" to="." method="_on_GreenBtn_pressed"]
 [connection signal="pressed" from="YellowBtn" to="." method="_on_YellowBtn_pressed"]
 [connection signal="pressed" from="WhiteBtn" to="." method="_on_WhiteBtn_pressed"]
 [connection signal="pressed" from="BlackBtn" to="." method="_on_BlackBtn_pressed"]
+[connection signal="color_changed" from="ColorPickerButton" to="." method="_on_ColorPickerButton_color_changed"]
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
